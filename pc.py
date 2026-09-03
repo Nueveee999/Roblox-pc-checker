@@ -8,7 +8,7 @@ import urllib.request
 from pathlib import Path
 from datetime import datetime, timedelta
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1544992006508642354/4JXoZqzMTR5To56f-cErDhBsLhtnU305fZiXlfbQMRyP9IygyRsMW7PF8jiN1zH5l5l6"
+WEBHOOK_URL = "https://discord.com/api/webhooks/1544992006508642354/dikotatapusin to ulul spam mopa e"
 
 ASCII_LOGO = """
   ░▒▓███████▓▒░ ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
