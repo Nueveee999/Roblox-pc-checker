@@ -470,7 +470,6 @@ def check_temp_folders():
 
 def get_desktop_path():
     """Return the real Desktop path, even if it's redirected to OneDrive."""
-    # Try Windows shell API first (handles OneDrive redirection)
     try:
         import ctypes
         CSIDL_DESKTOPDIRECTORY = 0x0010
@@ -481,24 +480,20 @@ def get_desktop_path():
             return desktop
     except Exception:
         pass
-    # Fallback 1: standard home/Desktop
     desktop = Path.home() / "Desktop"
     if desktop.exists():
         return desktop
-    # Fallback 2: OneDrive Desktop
     onedrive = os.environ.get("OneDrive", "")
     if onedrive:
         od_desktop = Path(onedrive) / "Desktop"
         if od_desktop.exists():
             return od_desktop
-    # Fallback 3: save next to the exe / script itself
     try:
         exe_dir = Path(sys.executable).parent
         if exe_dir.exists():
             return exe_dir
     except Exception:
         pass
-    # Last resort: TEMP folder
     return Path(os.environ.get("TEMP", "C:/Temp"))
 
 def save_report():
